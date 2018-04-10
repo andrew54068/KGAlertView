@@ -1,24 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2CM-qp-6tB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Target For Testing File Owner-->
+        <scene sceneID="ySg-AY-bWY">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController storyboardIdentifier="TargetForTestingFileOwner" id="2CM-qp-6tB" customClass="TargetForTestingFileOwner" customModule="KGAlertView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6cB-h5-ScP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qL-Vv-8tQ">
+                                <rect key="frame" x="159.5" y="607" width="56" height="30"/>
+                                <state key="normal" title="unlike"/>
+                                <connections>
+                                    <action selector="unlikeAction:" destination="2CM-qp-6tB" eventType="touchUpInside" id="T1W-iG-gPe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyq-8e-Fop">
+                                <rect key="frame" x="27.5" y="607" width="56" height="30"/>
+                                <state key="normal" title="caution"/>
+                                <connections>
+                                    <action selector="cautionAction:" destination="2CM-qp-6tB" eventType="touchUpInside" id="jJe-2O-l4q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sh1-9c-wEl">
+                                <rect key="frame" x="225.5" y="607" width="56" height="30"/>
+                                <state key="normal" title="success"/>
+                                <connections>
+                                    <action selector="successAction:" destination="2CM-qp-6tB" eventType="touchUpInside" id="pX0-pf-f1v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81C-CT-MuC">
+                                <rect key="frame" x="291.5" y="607" width="56" height="30"/>
+                                <state key="normal" title="send"/>
+                                <connections>
+                                    <action selector="sendAction:" destination="2CM-qp-6tB" eventType="touchUpInside" id="3Np-Jb-0w8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5c-6h-Ulz">
+                                <rect key="frame" x="93.5" y="607" width="56" height="30"/>
+                                <state key="normal" title="like"/>
+                                <connections>
+                                    <action selector="likeAction:" destination="2CM-qp-6tB" eventType="touchUpInside" id="iUy-dI-SgY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5a-ix-e3m">
+                                <rect key="frame" x="161.5" y="567" width="51" height="30"/>
+                                <state key="normal" title="custom"/>
+                                <connections>
+                                    <action selector="customAction:" destination="2CM-qp-6tB" eventType="touchUpInside" id="stL-Ry-wka"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Sh1-9c-wEl" firstAttribute="top" secondItem="9qL-Vv-8tQ" secondAttribute="top" id="8bH-qB-7Ch"/>
+                            <constraint firstItem="9qL-Vv-8tQ" firstAttribute="centerX" secondItem="KYo-Sm-85n" secondAttribute="centerX" id="9sT-nx-TI2"/>
+                            <constraint firstItem="V5c-6h-Ulz" firstAttribute="width" secondItem="kyq-8e-Fop" secondAttribute="width" id="BLs-eb-mvz"/>
+                            <constraint firstItem="kyq-8e-Fop" firstAttribute="top" secondItem="V5c-6h-Ulz" secondAttribute="top" id="Dcj-On-J2G"/>
+                            <constraint firstItem="k5a-ix-e3m" firstAttribute="centerX" secondItem="KYo-Sm-85n" secondAttribute="centerX" id="Hes-Os-bVj"/>
+                            <constraint firstItem="81C-CT-MuC" firstAttribute="width" secondItem="V5c-6h-Ulz" secondAttribute="width" id="IE6-aL-a9F"/>
+                            <constraint firstItem="V5c-6h-Ulz" firstAttribute="top" secondItem="9qL-Vv-8tQ" secondAttribute="top" id="JXY-0l-e7g"/>
+                            <constraint firstItem="9qL-Vv-8tQ" firstAttribute="top" secondItem="k5a-ix-e3m" secondAttribute="bottom" constant="10" id="KWD-gz-N1P"/>
+                            <constraint firstItem="81C-CT-MuC" firstAttribute="top" secondItem="Sh1-9c-wEl" secondAttribute="top" id="Kld-xa-EvL"/>
+                            <constraint firstItem="KYo-Sm-85n" firstAttribute="bottom" secondItem="9qL-Vv-8tQ" secondAttribute="bottom" constant="30" id="MLm-Zg-hk0"/>
+                            <constraint firstItem="9qL-Vv-8tQ" firstAttribute="leading" secondItem="V5c-6h-Ulz" secondAttribute="trailing" constant="10" id="a84-2J-DMp"/>
+                            <constraint firstItem="9qL-Vv-8tQ" firstAttribute="width" secondItem="kyq-8e-Fop" secondAttribute="width" id="cdd-sA-BOa"/>
+                            <constraint firstItem="Sh1-9c-wEl" firstAttribute="width" secondItem="V5c-6h-Ulz" secondAttribute="width" id="ffi-xb-zGL"/>
+                            <constraint firstItem="81C-CT-MuC" firstAttribute="leading" secondItem="Sh1-9c-wEl" secondAttribute="trailing" constant="10" id="kiY-xr-zCH"/>
+                            <constraint firstItem="V5c-6h-Ulz" firstAttribute="leading" secondItem="kyq-8e-Fop" secondAttribute="trailing" constant="10" id="rni-Is-NeN"/>
+                            <constraint firstItem="Sh1-9c-wEl" firstAttribute="leading" secondItem="9qL-Vv-8tQ" secondAttribute="trailing" constant="10" id="vGh-lX-Njs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KYo-Sm-85n"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uBZ-ey-KFI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1998" y="32"/>
         </scene>
     </scenes>
 </document>

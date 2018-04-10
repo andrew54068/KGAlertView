@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		6DF880F7205B89E40090242E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF880F6205B89E40090242E /* AppDelegate.swift */; };
-		6DF880F9205B89E40090242E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF880F8205B89E40090242E /* ViewController.swift */; };
 		6DF880FC205B89E40090242E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DF880FA205B89E40090242E /* Main.storyboard */; };
 		6DF880FE205B89E40090242E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DF880FD205B89E40090242E /* Assets.xcassets */; };
 		6DF88101205B89E40090242E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DF880FF205B89E40090242E /* LaunchScreen.storyboard */; };
+		6DF8810C205B8A050090242E /* KGAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF88108205B8A050090242E /* KGAlertView.swift */; };
+		6DF8810E205B8A050090242E /* TargetForTestingFileOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF8810A205B8A050090242E /* TargetForTestingFileOwner.swift */; };
+		6DF8810F205B8A050090242E /* KGAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DF8810B205B8A050090242E /* KGAlertView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6DF880F3205B89E30090242E /* KGAlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KGAlertView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DF880F6205B89E40090242E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6DF880F8205B89E40090242E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6DF880FB205B89E40090242E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DF880FD205B89E40090242E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DF88100205B89E40090242E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DF88102205B89E40090242E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DF88108205B8A050090242E /* KGAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGAlertView.swift; sourceTree = "<group>"; };
+		6DF8810A205B8A050090242E /* TargetForTestingFileOwner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetForTestingFileOwner.swift; sourceTree = "<group>"; };
+		6DF8810B205B8A050090242E /* KGAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGAlertView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				6DF880F6205B89E40090242E /* AppDelegate.swift */,
-				6DF880F8205B89E40090242E /* ViewController.swift */,
 				6DF880FA205B89E40090242E /* Main.storyboard */,
 				6DF880FD205B89E40090242E /* Assets.xcassets */,
 				6DF880FF205B89E40090242E /* LaunchScreen.storyboard */,
 				6DF88102205B89E40090242E /* Info.plist */,
+				6DF88108205B8A050090242E /* KGAlertView.swift */,
+				6DF8810B205B8A050090242E /* KGAlertView.xib */,
+				6DF8810A205B8A050090242E /* TargetForTestingFileOwner.swift */,
 			);
 			path = KGAlertView;
 			sourceTree = "<group>";
@@ -124,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DF88101205B89E40090242E /* LaunchScreen.storyboard in Resources */,
+				6DF8810F205B8A050090242E /* KGAlertView.xib in Resources */,
 				6DF880FE205B89E40090242E /* Assets.xcassets in Resources */,
 				6DF880FC205B89E40090242E /* Main.storyboard in Resources */,
 			);
@@ -136,8 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DF880F9205B89E40090242E /* ViewController.swift in Sources */,
+				6DF8810C205B8A050090242E /* KGAlertView.swift in Sources */,
 				6DF880F7205B89E40090242E /* AppDelegate.swift in Sources */,
+				6DF8810E205B8A050090242E /* TargetForTestingFileOwner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +285,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2KP5DU4HL;
 				INFOPLIST_FILE = KGAlertView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.25sprout.KGAlertView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2KP5DU4HL;
 				INFOPLIST_FILE = KGAlertView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.25sprout.KGAlertView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
